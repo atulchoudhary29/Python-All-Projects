@@ -1,0 +1,77 @@
+html, body {
+    height:100%;
+    margin:0;
+    background-image: url("https://images.unsplash.com/photo-1501437547230-2068bdccfd1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NHwyMjAzMDM0fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    
+    color:rgb(14, 4, 4);
+    overflow:hidden;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1 {
+    font-family: Comic Sans MS;
+    font-size: 100px;
+    color:rgb(46, 24, 9);
+    margin-top:80px;
+}
+
+.container form {
+    margin: 15px;
+
+}
+
+.container input {
+    width: 350px;
+    height: 15px;
+    font-size: 15px;
+    margin:2px;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.container button{
+    padding: 0.5rem;
+    background-color: rgb(219, 222, 176);
+    border: mediumblue;
+    margin: 4px;
+    font-size: auto;
+    border-radius: 7px;
+
+}
+
+.container p {
+    margin: 120px;
+}
+
+.text {
+    font-size: 18px;
+    color: rgb(2, 15, 15);
+}
+
+.container h2 {
+    font-family: Ink Free;
+    font-size: 35px;
+    color:rgb(187, 69, 69);
+    margin-top:2px;
+}
+
+.container h3{
+    font-family: Goudy Old Style;
+    font-size: 20px;
+    color:rgb(36, 5, 14);
+    margin-top:20px;
+}
+
+.container table{
+    color:rgb(36, 5, 14);
+}

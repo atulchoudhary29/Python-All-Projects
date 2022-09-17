@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Geo Coder</title>
+  <head>
+      <link href="../static/main.css" rel="stylesheet">
+  </head>
+    <body>
+        <div class="container"> 
+            <h1>Geo-Coder</h1>
+            <h2>This Web App give you coordinates of given address in your file.</h2>
+            <h3><em>Note: Please upload your <strong>CSV</strong> file. The values containing Addresses should be in a column named</em> Address.</h3>
+            <div class="text">
+                {{ text | safe }}
+            </div>
+            <form action="{{url_for('success')}}" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file"> <br>
+                <button type="submit"> Submit </button>
+            </form>
+            <div class="table">
+                {% for table in tables %}
+                  {{ table|safe }}
+                {% endfor %}
+            </div>
+              {% include [btn] ignore missing %} 
+            
+        </div>
+    </body>
+</html>
